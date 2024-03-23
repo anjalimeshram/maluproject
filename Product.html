@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            #head {
+            background-color: #D82B2A;
+            height: 12%;
+            position: fixed;
+            width: 100%;
+            display: flex;            
+            align-items: center;
+            z-index: 1000;
+
+        }
+        .logo {
+            padding-left: 4%;
+        }
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .head1 {
+            border: 2px solid black;
+            height: 740px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .pop {
+            font-size: 55px;
+            margin-top: 140px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .pop1 {
+            font-size: 30px;
+            margin-top: 80px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        .p4 {
+            
+            text-align: center;
+            background-color: #D82B2A;
+            border-top-right-radius: 50px;
+            box-shadow: 0px 8px 16px 0px #494b4d;
+            /* clear: both; */
+            margin-top: 580px;
+            margin-left: 370px;
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 50%;
+            padding-top: 20px;
+        }
+        .p5 {
+           
+           font-size: 20px;
+           color: white;
+       }
+
+        
+        #im6 {
+            width: 98%;
+            margin-top: 100px;
+            padding-left: 20px;
+            /* border: 2px solid black; */
+        }
+        #box1 {
+            background-color: #D82B2A;
+            height: 120px;
+            margin-top: 80px;
+            padding-top: 10px;
+        }
+
+                .a1 {
+            width: 200px;
+            height: 120px;
+            margin-left: 100px;
+        }
+
+        .a2 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+
+        .a3 {
+            width: 150px;
+            margin-left: 50px;
+        }
+
+        .a4 {
+            width: 170px;
+            height: 90px;
+            margin-left: 50px;
+        }
+
+        .a5 {
+            width: 150px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .a6 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+        #pop {
+            /* background-color: #EDEAED; */
+            /* border: 2px solid black; */
+            height: 470px;
+        }
+        #sec1 {
+            margin: 10px;
+            border: 0px solid black;
+            background-color: white;
+            text-align: center;
+            width: 250px;
+            height: 350px;
+            float: left;
+            margin-left: 170px;
+            margin-top: 90px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+            /* border-top-right-radius: 50px; */
+        }
+
+        #sec1:hover {
+            transform: translateY(-10px);
+            background-color: #1F5776;
+            color: white;
+            box-shadow: 0px 8px 16px 0px #93b4eb;
+        }
+
+        #p1 {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        #p2 {
+            margin-top: 40px;
+            font-size: 30px;
+        }
+        .a10{
+            font-size: 40px;
+            color: white;
+        }
+        #box3{
+            text-align: center;
+        }
+        #box3 a{
+            text-decoration: none;
+            color: white;            
+            font-size: 25px;
+        
+        }
+        .line3{
+            display: none;
+        }
+        @media screen and (max-width:800px) {
+            #head {
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+                display: block;
+                height: auto;
+            }
+            .line3{
+                display: block;
+                color: white;
+                float: right;
+                /* border: 1px solid black; */
+                font-size: 30px;
+                margin: 25px 20px 0 0;
+
+            }
+            .logo{
+                margin-top: 10px;
+            }
+            .updown{
+                display: none;
+            }
+            .head1{
+                /* background-position: left; */
+                background-position: center;
+                /* background-size: cover; */
+                /* background-position: inherit; */
+            }
+            .head2{
+                margin-top: 100px;
+                width: 100%;
+            }
+            .head2 h1{
+                width: 90%;
+                font-size: 35px;
+                /* text-align: justify; */
+                padding: 5%;
+                background-color: rgba(0, 0, 0, 0.635);
+            }
+            /* .head2 a{
+                /* background-color: rgba(0, 0, 0, 0.635); */
+                /* width: 100%;
+                padding: 0;
+                margin: 0; */
+                /* display: block; */
+            /* } */ */
+            /* .head2 .btn{
+                width: 70%;
+                font-size: 20px;
+                padding: 5%;
+                margin: 5% 5% 5% 15%;
+                /* margin-left: 10%; */
+            /* } */ */
+            #head nav{
+                width: 100%;
+                /* border: 1px solid black; */
+
+                padding: 0;
+                margin: 0;
+            }
+            #head ul{
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+            }
+            #head li{
+                width: 100%;
+                text-align: center;
+                /* background-color: #D82B2A; */
+                
+                padding: 2% 0 2% 0;
+                margin: 0;
+            }
+            #pop{
+               /* border: 1px solid red;  */
+               margin: 5% 0% 5% 5%;
+               margin-top: 5%;
+               height: 2400px;
+               padding: 0;
+               width: 95%;
+            }
+            
+
+            #sec1{
+               /* border: 1px solid red;  */
+               margin: 5% 10% 5% 10%;
+               padding: 0;
+               width: 70%;
+               height: auto;
+               
+            }
+            #sec1 h2{
+               /* border: 5px solid red;  */
+               margin: 5%;
+               padding: 0;
+               width: 80%;
+            }
+            #sec1 p{
+               /* border: 5px solid red;  */
+               margin: 15;
+               padding: 0 10% 0 10%;
+               width: 80%;
+            }
+            .p4{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                clear: both;
+                margin-top: 0;
+            }
+            .p5{
+                width: 90%;
+                  padding: 5%;
+            }
+            .p5 h1{
+                font-size: 25px;
+            }
+            #im6{
+                width: 90%;
+                padding: 5%;
+
+                margin: 0;
+                text-align: center;
+            }
+            #im6 img{
+                /* float: left; */
+                width: 50%;
+                margin: 10% 25% 10% 25%;
+                height: auto;
+                display: block;
+            }
+        }
+        </style>
+        <script>
+        $(document).ready(function(){
+            $(".line3").click(function(){
+                $(".updown").slideToggle();
+            })
+        })
+    </script>
+    </head>
+    <body>
+        <div id="head">
+            <img src="images/malu logo.jpg" class="logo">
+            <div class="line3">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="updown">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Product.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+    
+                </ul>
+            </nav>
+        </div>
+        <div class="head1" style="background-image: url(images/welding\ new.webp);">
+            <div class="head2">
+                <h1 class="pop"><b>Our Products<br>----*----</b></h1>
+                <p class="pop1"><mark style="background-color: black; color: white;">India’s Largest selling Maluweld
+                    !<br />A wide range of products to cater every demand</mark></p>
+           
+           </div>
+        </div>
+        <div id="pop">
+            <!-- <div id="sec"> -->
+            <div id="sec1">
+                    <!-- <img src="../Images/home weld.png" style="height: 70px; width: 80px; margin-left: 50px;"> -->
+                    <h2 id="p2">Welding Electrode</h2>
+                    <p id="p1">The welding electrode is connected to the welding machine, carrying welding current, and establishes an electric arc to fuse the metals for joining. The coating protects the 
+                        metal from damage.</p>
+                    <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <!-- <img src="../Images/home weld.png" style="height: 70px; width: 80px; margin-left: 50px;"> -->
+                <h2 id="p2">Bare Electrodes</h2>
+                <p id="p1">These electrodes do not have a coating of flux on them. These electrodes are often used in automatic and semiautomatic welding, they are metal rods with a pointed tip that create an electrical arc between the electrode and the metal.</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <!-- <img src="../images/car.png" style="height: 70px; width: 80px;"> -->
+                <h2 id="p2">Coated Electrodes</h2>
+                <p id="p1">A welding specialist will be able to restore damaged cars by fusing the metal back together,
+                     as well as refilling crevices that have occurred due to collision or general wear and tear. </p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <!-- <img src="../Images/machine.png" style="height: 70px; width: 80px; margin-left: 25px;"> -->
+                <h2 id="p2">Lightly Coated Electrodes</h2>
+                <p id="p1">Welding with the equipment which needs the operator manipulation or adjustment in response to changes 
+                    in welding condition.The torch, gun, or electrode holder is held by a mechanical device.</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <!-- <img src="../Images/machine.png" style="height: 70px; width: 80px; margin-left: 25px;"> -->
+                <h2 id="p2">Heavily Coated Electrodes</h2>
+                <p id="p1">A Heavily coated electrodes contain a heavy layer of coating. The commonly used materials for coating are titanium-oxide, 
+                    silica, flour, asbestos clay and calcium carbonate.</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <!-- <img src="../Images/machine.png" style="height: 70px; width: 80px; margin-left: 25px;"> -->
+                <h2 id="p2">Wire Electrodes</h2>
+                <p id="p1">During welding, an electrode is a metal wire that is used to conduct current and provide the filler 
+                    material for the weld joint. It can be consumable or non-consumable, depending on the welding process.</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+        </div>
+        <div class="p4">
+            
+            <div class="p5">
+                <h1>CLIENTS WE'VE WORKED WITH</h1>
+            </div>
+        </div>
+    
+    <div id="im6">
+        <img src="images/img1.jpg" class="a1">
+        <img src="images/img2.jpg" class="a2">
+        <img src="images/img3.jpg" class="a3">
+        <img src="images/img4.gif" class="a4">
+        <img src="images/img5.png" class="a5">
+        <img src="images/img6.jpg" class="a6">
+    </div>
+    <div id="box1">
+        <!-- <p id="box2">Copyright © 2023 Malu Weld</p> -->
+        <p id="box3"><a href="https://www.pskitservices.com/">Copyright ©2023 MaluWeld | Develope by PSK Technologies Pvt.Ltd</a></p>
+      
+   
+    </div>
+    </body>
+</html>

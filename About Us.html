@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #head {
+            background-color: #D82B2A;
+            position: fixed;
+            height: 12%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-left: 4%;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .head1 {
+            border: 2px solid black;
+            height: 740px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #sec1 {
+            margin: 10px;
+
+            text-align: center;
+            width: 550px;
+            height: 500px;
+
+            float: left;
+            margin-left: 110px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+
+            /* border-top-right-radius: 50px; */
+        }
+        #sec2 {
+            margin: 10px;
+
+            text-align: center;
+            width: 550px;
+            height: 500px;
+
+            float: left;
+            margin-left: 110px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+
+            /* border-top-right-radius: 50px; */
+        }
+        #sec2:hover {
+            /* border: 0px solid black; */
+            background-color: white;
+            display: block;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        #sec1:hover {
+            /* border: 0px solid black; */
+            background-color: white;
+            display: block;
+            box-shadow: 0px 8px 16px 0px black;
+        }
+
+        #p1 {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        #p2 {
+            margin-top: 40px;
+            font-size: 40px;
+        }
+
+        .pop {
+            font-size: 55px;
+            margin-top: 140px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+        .pop1 {
+            font-size: 30px;
+            margin-top: 80px;
+            color: white;
+
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .p7 {
+
+            /* text-align: center; */
+            clear: both;
+
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .p8 {
+            width: 70%;
+            margin-left: 240px;
+            background-color: #D82B2A;
+            box-shadow: 0px 8px 16px 0px #494b4d;
+            height: 35%;
+        }
+
+        .p9 {
+
+            font-size: 25px;
+            /* text-align: justify; */
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+
+        .p10 {
+            font-weight: bold;
+            font-size: 45px;
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .p4 {
+
+            text-align: center;
+            background-color: white;
+            border-top-right-radius: 60px;
+            box-shadow: 0px 8px 16px 0px #494b4d;
+            /* clear: both; */
+            margin-top: 100px;
+            margin-left: 370px;
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 50%;
+            padding-top: 20px;
+        }
+        .p5 {
+           
+           font-size: 20px;
+           color: black;
+       }
+
+
+        #im6 {
+            width: 98%;
+            margin-top: 80px;
+            padding-left: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .a1 {
+            width: 200px;
+            height: 120px;
+            margin-left: 100px;
+        }
+
+        .a2 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+
+        .a3 {
+            width: 150px;
+            margin-left: 50px;
+        }
+
+        .a4 {
+            width: 170px;
+            height: 90px;
+            margin-left: 50px;
+        }
+
+        .a5 {
+            width: 150px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .a6 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+
+        #box1 {
+            background-color: #D82B2A;
+            height: 120px;
+            margin-top: 80px;
+            padding-top: 10px;
+        }
+
+        #box2 {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        #box3 {
+            text-align: center;
+        }
+
+        #box3 a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .line3{
+            display: none;
+        }
+
+        @media screen and (max-width:800px) {
+            #head {
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+                display: block;
+                height: auto;
+            }
+            .line3{
+                display: block;
+                color: white;
+                float: right;
+                /* border: 1px solid black; */
+                font-size: 30px;
+                margin: 25px 20px 0 0;
+
+            }
+            .logo{
+                margin-top: 10px;
+            }
+            .updown{
+                display: none;
+            }
+            .head1{
+                /* background-position: left; */
+                background-position: center;
+                /* background-size: cover; */
+                /* background-position: inherit; */
+            }
+            .head2{
+                margin-top: 100px;
+                width: 100%;
+            }
+            .head2 h1{
+                width: 90%;
+                font-size: 35px;
+                /* text-align: justify; */
+                padding: 5%;
+                background-color: rgba(0, 0, 0, 0.635);
+            }
+            /* .head2 a{
+                /* background-color: rgba(0, 0, 0, 0.635); */
+                /* width: 100%;
+                padding: 0;
+                margin: 0; */
+                /* display: block; */
+            /* } */ */
+            /* .head2 .btn{
+                width: 70%;
+                font-size: 20px;
+                padding: 5%;
+                margin: 5% 5% 5% 15%;
+                /* margin-left: 10%; */
+            /* } */ */
+            #head nav{
+                width: 100%;
+                /* border: 1px solid black; */
+
+                padding: 0;
+                margin: 0;
+            }
+            #head ul{
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+            }
+            #head li{
+                width: 100%;
+                text-align: center;
+                /* background-color: #D82B2A; */
+                
+                padding: 2% 0 2% 0;
+                margin: 0;
+            }
+            #pop{
+               /* border: 1px solid red;  */
+               margin: 0;
+               height: 1100px;
+               padding: 0;
+               width: 100%;
+            }
+
+            #sec1{
+               /* border: 5px solid red;  */
+               margin: 5% 10% 5% 10%;
+               padding: 0;
+               /* margin-top: 200px; */
+               height: 720px;
+               width: 80%;
+            }
+            .p2{
+               /* border: 5px solid red;  */
+               margin: 0;
+               padding: 0;
+               width: 100%;
+            }
+            .p1{
+               /* border: 5px solid red;  */
+               margin: 10%;
+               padding: 0;
+
+               width: 100%;
+            }
+            #sec2{
+                margin: 0;
+                /* border: 5px solid red;  */
+                margin-top: 290px;
+               padding: 1%;
+               height: auto;
+               width: 95%;   
+            }
+            .p7{
+                margin: 5% 5% 5% 8%;
+               padding: 0;
+               margin-top: 210px;
+               /* border: 5px solid red;  */
+               width: 80%;
+            }
+            .p8{
+                margin: 0;
+               padding: 0;
+               /* border: 5px solid red;  */
+               width: 100%;
+            }
+            .p8 h1{
+                /* border: 2px solid white; */
+                padding-top: 4%;
+                margin-top: 0;
+            }
+            .p8 p{
+                /* border: 2px solid white; */
+                padding-bottom: 4%;
+                margin: 0;
+            }
+            .p4{
+                width: 100%;
+                /* border: 2px solid black; */
+                padding: 0;
+                
+                margin: 0;
+                clear: both;
+                margin-top: 50px;
+            }
+            .p5{
+                width: 90%;
+                /* border: 2px solid black; */
+                  padding: 5%;
+                  margin: 0;
+            }
+            .p5 h1{
+                font-size: 25px;
+            }
+            #im6{
+                width: 90%;
+                padding: 5%;
+
+                margin: 0;
+                text-align: center;
+            }
+            #im6 img{
+                /* float: left; */
+                width: 50%;
+                margin: 10% 25% 10% 25%;
+                height: auto;
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".line3").click(function () {
+                $(".updown").slideToggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="head">
+        <img src="images/malu logo.jpg" class="logo">
+        <div class="line3">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="updown">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+                <li><a href="Product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="head1" style="background-image: url(images/welding\ new.webp);">
+        <div class="head2">
+            <h1 class="pop"><b>ABOUT US<br>----*----</b></h1>
+            <p class="pop1"><mark style="background-color: black; color: white;">India’s Largest selling Maluweld
+                    !<br />A wide range of products to cater every demand</mark></p>
+
+        </div>
+    </div>
+    <div id="pop">
+        <!-- <div id="sec"> -->
+        <div id="sec1">
+            <!-- <img src="../Images/icad.png"> -->
+            <h2 id="p2">What Malu Weld Is</h2>
+            <p id="p1">Malu Weld is an ISO 9001 certified company equipped with best Quality Management.
+                Malu Electrodes has been serving the Indian industry with finest range of welding consumables since
+                2001.
+                Maluweld products are distributed across India and in various countries across the world.
+                We manufacture and export welding electrodes and wires. The company seeks to develop new,
+                high quality product families faster, with the primary focus on long-term benefits.
+                The constant development of welding processes is an important part of this work and goes a long way in
+                realizing
+                the key objective of customer satisfaction. Delivering quality services and satisfaction to our clients
+                from the past 10+ years.
+                Our team is filled with people having wide range of experience in the welding field.</p>
+        </div>
+        <div id="sec2">
+            <img src="images/weld about.jpg" style="width: 100%; height: 100%;">
+        </div>
+    </div>
+    <div class="p7">
+        <div class="p8">
+            <h1 class="p10">Our Mission</h1>
+            <p class="p9">Our Mission is to be globally known as a trustworthy partner to the core industry. We will
+                earn our customers enthusiasm through continuous improvement driven by the integrity, teamwork, and
+                innovation of our people.</p>
+        </div>
+    </div>
+    <div class="p4">
+
+        <div class="p5">
+            <h1>CLIENTS WE'VE WORKED WITH</h1>
+        </div>
+
+    </div>
+
+    <div id="im6">
+        <img src="images/img1.jpg" class="a1">
+        <img src="images/img2.jpg" class="a2">
+        <img src="images/img3.jpg" class="a3">
+        <img src="images/img4.gif" class="a4">
+        <img src="images/img5.png" class="a5">
+        <img src="images/img6.jpg" class="a6">
+    </div>
+    <div id="box1">
+        <!-- <p id="box2">Copyright © 2023 Malu Weld</p> -->
+        <p id="box3"><a href="https://www.pskitservices.com/">Copyright &copy ©2023 MaluWeld | Developed by PSK
+                Technologies Pvt.Ltd</a></p>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+
+<html>
+
+
+
+<head>
+    <style>
+        body{
+                padding: 0px;
+                margin: 0px;
+            }
+        #head {
+            background-color: #D82B2A;
+            height: 12%;
+            position: fixed;
+            width: 100%;
+            display: flex;            
+            align-items: center;
+        }
+        .logo {
+            padding-left: 4%;
+        }
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .head1 {
+            border: 2px solid black;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .btn {
+            background-color: #D82B2A;
+            width: 220px;
+            color: white;
+            font-weight: bolder;
+            padding: 15px 20px;
+            font-size: 20px;
+            border: none;
+            margin-top: 70px;
+            border-radius: 40px;
+            margin-left: 650px;
+        }
+
+        .btn:hover {
+            background-color: blue;
+        }
+
+        .pop {
+            font-size: 45px;
+            margin-top: 90px;
+            color: white;
+            padding: 65px;
+            text-align: center;
+        }
+
+        .pop1 {
+            font-size: 30px;
+            margin-top: 40px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #pop {
+            /* background-color: #EDEAED; */
+            /* border: 2px solid black; */
+            height: 470px;
+        }
+
+        #sec1 {
+            margin: 10px;
+            border: 0px solid black;
+            background-color: white;
+            text-align: center;
+            width: 250px;
+            height: 300px;
+            float: left;
+            margin-left: 70px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+            /* border-top-right-radius: 50px; */
+        }
+
+        #sec1:hover {
+            transform: translateY(-10px);
+        }
+
+        #p1 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        #p2 {
+            margin-top: 40px;
+            font-size: 30px;
+        }
+
+        .p3 {
+            text-align: center;
+            font-size: 40px;
+            /* border: 2px solid black; */
+            /* float: left; */
+
+        }
+
+        .p4 {
+            
+            text-align: center;
+            background-color: #D82B2A;
+            box-shadow: 0px 8px 16px 0px #494b4d;
+            /* clear: both; */
+            margin-top: 920px;
+            margin-left: 370px;
+            border-top-right-radius: 50p;
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 50%;
+            padding-top: 10px;
+        }
+
+        .p5 {
+           
+            font-size: 20px;
+            color: white;
+        }
+
+        #sec2 {
+            margin: 40px;
+            /* border: 10px solid black; */
+            background-color: whitesmoke;
+            text-align: center;
+            width: 570px;
+            height: 669px;
+            float: left;
+            margin-left: 100px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+
+            /* border-top-right-radius: 50px; */
+        }
+        #sec2:hover{
+            background-color: white;
+        }
+
+        #sec3 {
+            margin: 10px;
+            border: 0px solid black;
+            background-color: whitesmoke;
+            text-align: center;
+            width: 570px;
+            height: 670px;
+            float: left;
+            margin-left: 70px;
+            margin-top: 70px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+            /* border-top-right-radius: 50px; */
+        }
+        #sec3:hover{
+            background-color: white;
+        }
+
+        #sec4 {
+            margin: 10px;
+            border: 0px solid black;
+            background-color: white;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            float: right;
+            margin-left: 170px;
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+            /* border-top-right-radius: 50px; */
+        }
+
+        #im {
+            width: 150px;
+            float: left;
+            margin-top: 40px;
+            margin-left: 20px;
+            
+
+        }
+
+        #im1 {
+            font-size: 24px;
+            text-align: left;
+            padding-left: 220px;
+           
+            /* font-weight: 700; */
+            /* text-transform: uppercase; */
+
+
+        }
+
+        #im2 {
+            font-size: 20px;
+            text-align: justify;
+            float:left;
+            margin-left: 50px;
+            width: 60%;
+          
+            /* text-align: left; */
+
+
+        }
+
+        #im3 {
+            width: 170px;
+            float: right;
+            
+            margin-top: 50px;
+            margin-right: 30px;
+
+        }
+
+        #im4 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 55px;
+            float: left;
+            padding-top: 10px;
+            padding-left: 0px;
+            
+            margin-left: 30px;
+
+        }
+
+        #im5 {
+            font-size: 20px;
+            float: left;
+            text-align: left;
+            margin-left: 30px;
+            
+           
+        }
+
+        #im7 {
+            width: 150px;
+            float: left;
+            
+            margin-top: 70px;
+            margin-right: 90px;
+        }
+
+        #im8 {
+            font-size: 24px;                                  
+            margin-bottom: 0px;
+            float: left;
+            margin-top: 30px;
+            /* border: 1px solid black; */
+            width: 50%;
+            padding: 12px;
+            text-align: left;
+            padding-top: 40px;
+            padding-left: 0px;
+            margin-left: 10px;
+            
+        }
+
+        #im9 {
+            font-size: 20px;
+            /* float: right; */
+            /* text-align: left; */
+            margin-left: 250px;
+            height: 50px;
+            width: 55%;
+            text-align: justify;
+           
+            margin-top: 400px;
+            padding-top: 90px;
+            
+
+
+        }
+
+        #im6 {
+            width: 98%;
+            margin-top: 90px;
+            padding-left: 20px;
+            
+        }
+
+        .a1 {
+            width: 200px;
+            height: 120px;
+            margin-left: 100px;
+        }
+
+        .a2 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+
+        .a3 {
+            width: 150px;
+            margin-left: 50px;
+        }
+
+        .a4 {
+            width: 170px;
+            height: 90px;
+            margin-left: 50px;
+        }
+
+        .a5 {
+            width: 150px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .a6 {
+            width: 170px;
+            height: 120px;
+            margin-left: 50px;
+        }
+
+        #box1 {
+            background-color: #D82B2A;
+            height: 120px;
+            margin-top: 80px;
+            padding-top: 10px;
+        }
+        #box3{
+            text-align: center;
+        }
+        #box3 a{
+            text-decoration: none;
+            color: white;            
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <img src="images/malu logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+                <li><a href="Product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="head1" style="background-image: url(images/malus.jpg);">
+        <div class="head2">
+            <h1 class="pop"><b>MANUFACTURER OF ALL TYPES OF WELDING <br>ELECTRODES AND WIRES</b></h1>
+            <p class="pop1"><mark style="background-color: black; color: white;">India’s Largest selling Maluweld
+                    !<br />A wide range of products to cater every demand</mark></p>
+            <a href="contact.html"><input type="button" class="btn" value="CONTACT US NOW"></a>
+        </div>
+    </div>
+    </div>
+    <div id="pop" class="pri1">
+        <!-- <div id="sec"> -->
+        <div id="sec1">
+            <!-- <img src="../Images/icad.png"> -->
+            <h2 id="p2">10+ YEARS EXPERIENCE</h2>
+            <p id="p1">Delivering quality <br>services and satisfaction <br>to our clients from the <br>past 10+ years.
+            </p>
+            <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+        </div>
+        <div id="sec1">
+            <!-- <img src="../Images/icad.png"> -->
+            <h2 id="p2">CERTIFIED COMPANY</h2>
+            <p id="p1">Malu Weld is an ISO 9001<br> certified company <br>equipped with best <br>Quality Management.</p>
+            <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+        </div>
+        <div id="sec1">
+            <!-- <img src="../Images/icad.png"> -->
+            <h2 id="p2">DISTRIBUTION NETWORK</h2>
+            <p id="p1">Maluweld products are<br> distributed across India<br> and in various countries<br> across the
+                world.</p>
+            <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+        </div>
+        <div id="sec1">
+            <!-- <img src="../Images/icad.png"> -->
+            <h2 id="p2">EXPERT TEAM</h2>
+            <p id="p1">Our team is filled with<br> people having wide range <br>of experience in the<br> welding field.
+            </p>
+            <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+        </div>
+    </div>
+    <div>
+        <h1 class="p3">OUR EXPERTISE<br>-----*-----</h1>
+    </div>
+    <div id="sec2">
+        <img class=im1 src="images/wield.jpg" style="height: 670px; width: 570px;">
+    </div>
+    <div id="sec3">
+        <div>
+            <img src="images/buil-removebg-preview.png" id="im">
+        </div>
+        <div>
+            <h3 id="im1">WE ARE PROFESSIONAL ORGANISATION</h3>
+            <p id="im2">We make professional quality welding<br> consumables for the wide range of the materials.</p>
+        </div>
+
+        <div>
+            <div>
+                <img src="images/hand-removebg-preview.png" id="im3">
+            </div>
+            <h3 id="im4">WE ARE TRUSTED <br>TEAM MEMBERS</h3>
+            <p id="im5">Wealth of experience and broad range <br>of products earns us the trust of clients.</p>
+        </div>
+        <div>
+            <img src="images/peop-removebg-preview (1).png" id="im7">
+        </div>
+        <div class="ims8">
+            <h3 id="im8">WE ARE EXPERT <br>PRODUCTION TEAM</h3>
+            <p id="im9">expert production team makes the finest quality products.</p>
+        </div>
+    </div>
+
+    <div class="p4">
+        <div class="p5">
+            <h1>CLIENTS WE'VE WORKED WITH</h1>
+        </div>
+    </div>
+    <div id="im6">
+        <img src="images/img1.jpg" class="a1">
+        <img src="images/img2.jpg" class="a2">
+        <img src="images/img3.jpg" class="a3">
+        <img src="images/img4.gif" class="a4">
+        <img src="images/img5.png" class="a5">
+        <img src="images/img6.jpg" class="a6">
+    </div>
+    <div id="box1">
+        <!-- <p id="box2">Copyright © 2023 Malu Weld</p> -->
+        <p id="box3"><a href="https://www.pskitservices.com/">Copyright ©2023 MaluWeld | Developed by PSK Technologies Pvt.Ltd</a></p>
+      
+    </div>
+
+
+
+
+</body>
+
+</html>

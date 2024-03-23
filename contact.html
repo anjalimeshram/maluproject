@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/469d7c9e99.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   
+    <style>
+        body{
+                padding: 0px;
+                margin: 0px;
+            }
+        #head {
+            background-color: #D82B2A;
+            position: fixed;
+            border: 1px solid #D82B2A;
+            height: 12%;
+            width: 100%;
+            top: 0;
+            display: flex;
+            /* position: fixed; */
+            align-items: center;
+
+        }
+
+        .logo {
+            padding-left: 4%;
+        }
+
+        /* .div2 {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        } */
+
+        nav {
+            flex: 1;
+            text-align: right;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 20px; */
+            padding-right: 5%;
+
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .head1 {
+            border: 1px solid black;
+            height: 740px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .btn {
+            background-color: #D82B2A;
+            width: 220px;
+            color: white;
+            font-weight: bolder;
+            padding: 15px 20px;
+            font-size: 20px;
+            border: none;
+            margin-top: 50px;
+            border-radius: 40px;
+            margin-left: 650px;
+        }
+
+        .btn:hover {
+            background-color: blue;
+        }
+
+        .pop {
+            font-size: 55px;
+            margin-top: 140px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .pop1 {
+            font-size: 40px;
+            margin-top: 80px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #pop {
+            /* background-color: #EDEAED; */
+            /* border: 2px solid black; */
+            height: 470px;
+        }
+        #sec1 {
+            margin: 10px;
+            /* border: 2px solid black; */
+            height: 400px;
+            background-color: white;
+            text-align: center;
+            width: 250px;
+            height: 320px;
+            float: left;
+            margin-left: 170px;
+            margin-top: 90px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px black;
+            transition: transform 0.5s;
+            /* border-top-right-radius: 50px; */
+        }
+
+        #sec1:hover {
+            transform: translateY(-10px);
+        }
+
+        #p1 {
+            font-size: 20px;
+            line-height: 20px;
+            /* border: 2px solid black; */
+        }
+
+        #p2 {
+            margin-top: 40px;
+            
+            font-size: 30px;
+        }
+        #box1 {
+            background-color: #D82B2A;
+            height: 120px;
+            margin-top: 80px;
+            padding-top: 10px;
+        }
+        #box2{
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        iframe{
+            width: 100%;
+            height: 500px;
+            margin-top: 70px;
+        }
+        #box3{
+            text-align: center;
+        }
+        #box3 a{
+            text-decoration: none;
+            color: white;            
+            font-size: 25px;
+        }
+        .line3{
+            display: none;
+        }
+        @media screen and (max-width:800px) {
+            #head {
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+                display: block;
+                height: auto;
+            }
+            .line3{
+                display: block;
+                color: white;
+                float: right;
+                /* border: 1px solid black; */
+                font-size: 30px;
+                margin: 25px 20px 0 0;
+
+            }
+            .logo{
+                margin-top: 10px;
+            }
+            .updown{
+                display: none;
+            }
+            .head1{
+                /* background-position: left; */
+                background-position: center;
+                /* background-size: cover; */
+                /* background-position: inherit; */
+            }
+            .head2{
+                margin-top: 100px;
+                width: 100%;
+            }
+            .head2 h1{
+                width: 90%;
+                font-size: 35px;
+                /* text-align: justify; */
+                padding: 5%;
+                background-color: rgba(0, 0, 0, 0.635);
+            }
+            .head2 p{
+                
+                font-size: 32px;
+                
+             }
+            /* .head2 a{
+                /* background-color: rgba(0, 0, 0, 0.635); */
+                /* width: 100%;
+                padding: 0;
+                margin: 0; */
+                /* display: block; */
+            /* } */ */
+            /* .head2 .btn{
+                width: 70%;
+                font-size: 20px;
+                padding: 5%;
+                margin: 5% 5% 5% 15%;
+                /* margin-left: 10%; */
+            /* } */ */
+            #head nav{
+                width: 100%;
+                /* border: 1px solid black; */
+
+                padding: 0;
+                margin: 0;
+            }
+            #head ul{
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 0;
+                margin: 0;
+            }
+            #head li{
+                width: 100%;
+                text-align: center;
+                /* background-color: #D82B2A; */
+                
+                padding: 2% 0 2% 0;
+                margin: 0;
+            }
+            #pop{
+               /* border: 1px solid red;  */
+               margin: 5% 0% 5% 5%;
+               margin-top: 5%;
+               height: 1000px;
+               padding: 0;
+               width: 95%;
+            }
+            
+
+            #sec1{
+               /* border: 1px solid red;  */
+               margin: 5% 10% 5% 10%;
+               padding: 0;
+               width: 70%;
+               
+            }
+            #sec1 h2{
+               /* border: 5px solid red;  */
+               margin: 1%;
+               padding: ;
+               width: 80%;
+               margin-left: 18px;
+            }
+            #sec1 img{
+               /* border: 5px solid red;  */
+               margin: 5%;
+               padding: 0;
+               /* width: 80%; */
+            }
+            #sec1 p{
+               /* border: 5px solid red;  */
+               margin: 15;
+               padding: 0 10% 0 10%;
+               width: 80%;
+            }
+            /* iframe{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                padding-top: 0;
+            } */
+        }
+    </style>
+     <script>
+        $(document).ready(function () {
+            $(".line3").click(function () {
+                $(".updown").slideToggle();
+            })
+        })
+    </script>
+    </head>
+    <body>
+        <div id="head">
+            <img src="images/malu logo.jpg" class="logo">
+            <div class="line3">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="updown">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Product.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head1" style="background-image: url(images/wiel.png);">
+            <div class="head2">
+                <h1 class="pop"><b>CONTACT US<br>----*----</b></h1>
+                <p class="pop1"><mark style="background-color: black; color: white;">Need an expert? you are more than welcomed to leave your <br>contact info and we will be in touch shortly</mark></p>
+                
+            </div>
+        </div>
+        <div id="pop">
+            <!-- <div id="sec"> -->
+            <div id="sec1">
+                <img src="Images/home.png" style="height: 70px; width: 80px;">
+                <h2 id="p2">VISIT US</h2>
+                <p id="p1">Bhawani Welding Pvt. Ltd. Plot No.204 & 205, Umiya Industrial Area, Kapsi, Bhandara Road, Nagpur Maharashtra India
+                </p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <img src="images/call.png" style="height: 70px; width: 80px;">
+                <h2 id="p2">CALL US</h2>
+                <p id="p1">+91-8208811424<br>
+                    +91-9822230800</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+            <div id="sec1">
+                <img src="Images/msg.png" style="height: 70px; width: 80px;">
+                <h2 id="p2">CONTACT US</h2>
+                <p id="p1">In case of any manufacturing defect please contact on email: info@maluweld.com</p>
+                <!-- <a href="#"><input type="button" value="Learn more"><a> -->
+            </div>
+        </div>
+        <div>
+            <!-- <h1>Map</h1> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10030.618382347564!2d79.08345455905666!3d21.149805399533605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1703555896688!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="box1">
+            <!-- <p id="box2">Copyright © 2023 Malu Weld</p>> -->
+            <p id="box3"><a href="https://www.pskitservices.com/">Copyright ©2023 MaluWeld | Develope by PSK Technologies Pvt.Ltd</a></p>
+        </div>
+    </body>
+    </html>
+
